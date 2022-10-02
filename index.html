@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Shrubs</title>
+  </head>
+  
+  <body>
+   <!-- nav bar here -->
+    <nav class="navbar fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#intro-id">
+              <img src="./assets/images/logo1-edit.png" alt="SHRUBS" width="40" height="40">
+            </a>
+            <ul class="nav justify-content-center">
+                <li class="custom-link">
+                    <a class="nav-link" target="_blank" href="">Twitter</a>
+                </li>
+                <li class="custom-link">
+                    <a class="nav-link" target="_blank" href="https://www.facebook.com/SHRUBSOUTDOORSERVICES/about/?id=100084259040715&sk=about">Facebook</a>
+                </li>
+                <li class="custom-link">
+                    <a class="nav-link" target="_blank" href="">Linked-In</a>
+                </li>
+                <li class="custom-link">
+                    <a class="nav-link" target="_blank" href="https://www.instagram.com/shrubsoutdoorservices/">Instagram</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+     
+    <!-- logo image -->
+    <!-- view services button -->
+    <!-- get a quote button -->
+    <div class="intro-section" id="intro-id">
+        <img src="./assets/images/shrubs logo mod 02.png" alt="SHRUBS main logo image" class="hero-image"></img>
+        <button class="contact-button" type="submit">CONTACT</button>
+        <a href="#services-id"><button class="services-button" type="submit">SERVICES</button></a>
+    </div>
+    
+    <!-- about us section -->
+    <div class="mission-statement">
+        <h2 class="mission-text">A group of gardeners focused on maintaining <br> our beautiful planet, one garden at a time.</h2>
+        <img src="./assets/images/strip2.png" alt="mowing strip" class="mower-mission">
+    </div>
+
+    <div class="about" id="about-id">
+        <img src="./assets/images/ABOUT US.png" alt="SHRUBS team" class="about-image">
+        <h1 class="about-title">About the Team</h1>
+        <p class="about-info">Some more info here about the team</p>
+    </div>
+    <!-- services section -->
+    <div class="services" id="services-id">
+        <h1 class="services-title">Our Services</h1>
+        <div class="mower">
+            <img src="./assets/images/mowericon.png" alt="Mower graphic" class="mower-icon">
+            <h3 class="mower-info">Lawn Mowing</h3>
+        </div>
+        <div class="window-cleaner">
+            <img src="./assets/images/windowicon.png" alt="Window Cleaner graphic" class="window-cleaner-icon">
+            <h3 class="window-info">Window Cleaning</h3>
+        </div>
+        <div class="gutter-cleaner">
+            <img src="./assets/images/guttericon.png" alt="Gutter Cleaner graphic" class="gutter-cleaner-icon">
+            <h3 class="gutter-info">Gutter Cleaning</h3>
+        </div>
+    </div>
+    <!-- contact section -->
+    <div class="contact">
+        <button type="submit" class="contact-button">CONTACT</button>
+    </div>
+
+    <!-- <form method="post" name="emailform" action="contact.php">
+
+        Enter Name:	<input type="text" name="name">
+        
+        Enter Email Address:	<input type="text" name="email">
+        
+        Enter Message:	<textarea name="message"></textarea>
+        
+        <input type="submit" value="Send Form">
+    </form>
+
+    <form action="contact.php" method="POST">
+        <div>
+          <input type="email" placeholder="email@example.com" name="email" required />
+        </div>
+        <div>
+          <input type="text" placeholder="Subject" name="subject" required />
+        </div>
+        <div>
+          <textarea placeholder="Your message" name="body" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Send a message</button>
+        </div>
+    </form> -->
+    
+<div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="POST" action="contact.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+    </form>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
